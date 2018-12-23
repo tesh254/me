@@ -1,0 +1,136 @@
+/* This is the main style sheet for this template */
+@font-face{
+  font-family: "historia";
+  src: url('./fonts/TheHistoriaDemo.ttf') format('embedded-opentype'), url('./fonts/TheHistoriaDemo.ttf') format('opentype');
+}
+html, body {
+  padding: 0px;
+  margin: 0px;
+  font-family: historia;
+}
+
+body{
+  /* min-height: 100vh; */
+}
+
+.header {
+    background: 
+    /* top, transparent red, faked with gradient */ 
+    linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45)
+    ),
+    /* bottom, image */
+    url(./bg.png) no-repeat;
+    background-size: 100vh;
+    /* width: 100%; */
+}
+
+.header .header-content {
+  height: 100vh;
+  width: 100%;
+}
+
+.right-stuff {
+  padding-left: 65%;
+  padding-top: 10%;
+}
+
+.header-stuff{
+  padding-right: 10%;
+}
+
+.header-title{
+  font-size: 89pt;
+  font-weight: 50;
+  border:4px solid black;
+  padding: 15%;
+}
+
+.header-form {
+  text-align: center;
+}
+
+.header-form h1{
+  font-family: historia;
+}
+
+form {
+  width: 100%;
+}
+
+form input {
+  outline: none;
+  border:none;
+  border-bottom: 2px solid black;
+  width: 100%;
+  font-size: 14pt;
+}
+
+form textarea {
+  outline: none;
+  border: 2px solid black;
+  width: 100%;
+  font-size: 14pt;
+  border-radius: 5px;
+}
+
+.content {
+  text-align: center;
+  font-size: 28pt;
+  font-family: monospace;
+}
+
+.content-header{
+  /* text-decoration: underline; */
+  font-weight: 100;
+}
+
+.content-description {
+  font-weight: 500;
+}
+
+hr {
+  border: 1px solid black;
+}
+
+.header-description {
+  font-size: 25pt;
+  text-align:center;
+  font-weight: 100;
+}
+
+.main-content {
+  padding: 25px;
+  /* display: inline-block; */
+}
+
+.mini-content {
+  border: 0.5px solid black;
+  height:auto;
+  border-radius: 5px;
+  width: 50%;
+  float: left;
+  padding-right: 25px;
+}
+
+.mini-content ul {
+  padding-left: 5%;
+  list-style: none;
+}
+
+.mini-content ul li {
+  /* float: left; */
+  padding-right: 3%;
+}
+
+.story {
+  font-size:12pt;
+  text-align: justify;
+  padding: 15px;
+}
+
+.logo{
+  width: 150px;
+  height: 150px;
+}

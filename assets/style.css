@@ -16,10 +16,10 @@ body{
 .header {
     background: 
     /* top, transparent red, faked with gradient */ 
-    linear-gradient(
+    /* linear-gradient(
       rgba(255, 255, 255, 0.45), 
       rgba(255, 255, 255, 0.45)
-    ),
+    ), */
     /* bottom, image */
     url(./bg.png) no-repeat;
     background-size: 100vh;
@@ -55,25 +55,6 @@ body{
   font-family: historia;
 }
 
-form {
-  width: 100%;
-}
-
-form input {
-  outline: none;
-  border:none;
-  border-bottom: 2px solid black;
-  width: 100%;
-  font-size: 14pt;
-}
-
-form textarea {
-  outline: none;
-  border: 2px solid black;
-  width: 100%;
-  font-size: 14pt;
-  border-radius: 5px;
-}
 
 .content {
   text-align: center;
@@ -133,4 +114,12 @@ hr {
 .logo{
   width: 150px;
   height: 150px;
+}
+
+.social-links {
+  padding-left: 18%;
+}
+
+#hidden2 {
+  visibility: hidden;
 }

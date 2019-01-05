@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./assets/semantic/semantic.css">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/mobile.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -19,15 +20,19 @@
                         <i class="blue python icon"></i>
                         <i class="green node icon"></i>
                         <i class="red html5 icon"></i>
-                        <br>
-                        <div class="ui divider"></div>
-                        <br>
-                        Mobile UI/UX Developer<br><br> 
+                        <i class="blue css3 icon"></i>
                         <i class="blue react icon"></i>
                         <br>
                         <div class="ui divider"></div>
                         <br>
-                        <button class="ui large basic black button">Contact</button>
+                        Mobile UI/UX Developer<br><br> 
+                        <i class="purple react icon"></i>
+                        <i class="green android icon"></i>
+                        <i class="black apple icon"></i>
+                        <br>
+                        <div class="ui divider"></div>
+                        <br>
+                        <button class="ui large basic black button" id="modal">Contact</button>
                         <button class="ui large black button">Projects</button>
                         <br>
                         <div class="ui divider"></div>
@@ -41,8 +46,8 @@
                             <button class="ui circular linkedin icon button">
                             <i class="linkedin icon"></i>
                             </button>
-                            <button class="ui circular google plus icon button">
-                            <i class="google plus icon"></i>
+                            <button class="ui circular instagram icon button">
+                            <i class="instagram icon"></i>
                             </button>
                         </div>
                         <div class="ui divider"></div>
@@ -50,12 +55,56 @@
                 </div>
             </div>
         </div>
+        <div class="ui modal the_modal">
+            <i class="close icon"></i>
+            <div class="header">
+                Contact Form
+            </div>
+            <div class="image content">
+                <div class="ui form right floated">
+                    <div class="field">
+                        <label>Email</label>
+                        <input type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="field">
+                        <label>Message</label>
+                        <textarea rows="5" cols="52" placeholder="Type your message" required></textarea>
+                    </div>
+                </div>
+                <div class="ui vertical divider" id="hidden"></div>
+                <div class="ui divider" id="hidden2"></div>
+                <div class="social-links">
+                    Social Platforms <br><br>
+                    <button class="ui circular facebook icon button">
+                    <i class="facebook icon"></i>
+                    </button>
+                    <button class="ui circular twitter icon button">
+                    <i class="twitter icon"></i>
+                    </button>
+                    <button class="ui circular linkedin icon button">
+                    <i class="linkedin icon"></i>
+                    </button>
+                    <button class="ui circular instagram icon button">
+                    <i class="instagram icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="actions">
+                <div class="ui black deny button">
+                cancel
+                </div>
+                <div class="ui positive right labeled icon button" type="submit">
+                Send
+                <i class="checkmark icon"></i>
+                </div>
+            </div>
+        </div>
     </header>
     <div class="ui divider"></div>
     <div class="content">
-        <br><br>
-        
     </div>
+    <script src="./assets/jquery.js"></script>
+    <script src="./assets/main.js"></script>
     <script src="./assets/semantic/semantic.js"></script>
 </body>
 </html>
